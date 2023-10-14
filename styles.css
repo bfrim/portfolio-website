@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    background-color: #03001C;
+    font-family: 'Cabin', sans-serif;
+    color: rgb(222, 222, 222);
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #03001C;
+    border-bottom: solid 1px #342f64;
+    position: fixed;
+}
+.header-buttons {
+    margin-right: 5vh;
+    width: 20vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-button {
+    width: 100%;
+    height: 100%;
+    background-color: #03001C;
+    border: none;
+    border-left: solid 1px #342f64;
+    border-right: solid 1px #342f64;
+    color: rgb(222, 222, 222);
+    transition: 0.3s;
+}
+.header-button:hover {
+    cursor: pointer;
+    background-color: #13103a;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: solid 1px #342f64;
+}
+.hero-text {
+    width: 50%;
+    height: 50vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-right: solid 1px #342f64;
+}
