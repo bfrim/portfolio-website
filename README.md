@@ -1,3 +1,1 @@
 # portfolio-website
-
-Just experimenting possible portfolio designs...
