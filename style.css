@@ -141,7 +141,7 @@ nav ul li a:hover {
 }
 
 #projects {
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,4 +175,29 @@ nav ul li a:hover {
     border: solid 1px #4c4c4c;
     margin-bottom: 2vh;
     border-radius: 20px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #1c1d1e; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(60, 60, 60); 
+	border-radius: 30px;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(65, 65, 65); 
+	border: 0;
 }
