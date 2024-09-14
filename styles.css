@@ -2,7 +2,7 @@
     --color1: #12151d;
     --color1-header: #12151d99;
     --color2: #171b24;
-    --color3: #272d3d;
+    --color3: #00000050;
     --color4: #dbe4ff;
 }
 
@@ -63,8 +63,8 @@ header h1{
     width: 1100px;
     /* background-color: hotpink; */
     background-color: var(--color1-header);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,15 +78,29 @@ header h1{
     border-radius: 1rem;
     border: 1px solid #2b3144;
 }
-@media screen and (max-width: 700px) {
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
     .inner-header {
         flex-direction: column;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
+        /* padding-top: 0.3rem;
+        padding-bottom: 0.3rem; */
     }
     .inner-header h3 {
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
+        /* margin-top: 0.3rem;
+        margin-bottom: 0.3rem; */
+    }
+    .inner-header h1 {
+        display: none;
+    }
+    .nav {
+        gap: 2rem
     }
 }
 
@@ -97,12 +111,6 @@ header h1{
     gap: 1rem;
 } */
 
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
 .cover {
     background-color: var(--color1);
     display: flex;
@@ -111,15 +119,8 @@ header h1{
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
-    background: radial-gradient(circle at 20% 30%, #2a384e, transparent 35%), 
-            radial-gradient(circle at 80% 40%, #1d1e4e, transparent 35%),
-            radial-gradient(circle at 60% 80%, #273841, transparent 40%),
-            radial-gradient(circle at 30% 70%, #4f3d75, transparent 30%),
-            radial-gradient(circle at 10% 90%, #233847, transparent 40%),
-            radial-gradient(circle at 70% 20%, #1d213b, transparent 30%),
-            radial-gradient(circle at 40% 50%, #2d3045, transparent 50%);
-    background-blend-mode: multiply;
     border-bottom: 2px solid #2b3144;
+    background: radial-gradient(circle at 50% 100%, #192726, transparent 70%)
 }
 /* .cover h3 {
     margin-top: 0;
@@ -130,8 +131,8 @@ header h1{
     flex-direction: column;
     align-items: center;
     width: 800px;
-    padding-top: 10rem;
-    padding-bottom: 7rem;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }
 
 .main-image {
@@ -139,9 +140,10 @@ header h1{
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
-    border: 0.5rem solid #2b3144;
-    background-image: url(./images/jarjar.jpg);
-    background-size: cover
+    border: 0.3rem solid #ffffff;
+    background-image: url(./images/mug2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects {
@@ -149,9 +151,11 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: center;
+    background: radial-gradient(circle at 10% 30%, #08140e, transparent 70%), 
+                radial-gradient(circle at 90% 70%, #0b2525, transparent 70%);
 }
 
 .inner-projects {
@@ -160,9 +164,9 @@ header h1{
     align-items: center;
     width: 800px;
     padding-top: 6rem;
-    padding-bottom: 800rem;
-    text-align: left;
-    gap: 2rem;
+    padding-bottom: 8rem;
+    /* text-align: left; */
+    gap: 1.5rem;
 }
 
 .projects-title {
@@ -170,18 +174,31 @@ header h1{
 }
 
 .single-project {
+    background-color: var(--color3);
+    box-shadow: 0px 5px 20px 1px var(--color1);
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 100%;
-    border: 1px solid #2b3144;
+    border: 1px solid #91919150;
     border-radius: 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
     padding-left: 1rem;
     padding-right: 1rem;
+    text-align: left;
 }
+
+.inner-projects,
+.single-project {
+    box-sizing: border-box;
+}
+
 .single-project h3 {
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 .single-project h2 {
     margin-bottom: 0;
+    margin-top: 1rem;
 }
