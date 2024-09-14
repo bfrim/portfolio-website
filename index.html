@@ -3,31 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Barnabé Frimaudeau</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
         <div class="inner-header">
-            <a href="#"><h3>Barnabé Frimaudeau</h3></a>
+            <h1><span class="emphasis">BF</span></h1>
+            
             <div class="nav">
-                <a href="#"><h3>About</h3></a>
-                <a href="#"><h3>Projects</h3></a>
+                <a href="#about"><h3>About</h3></a>
+                <a href="#projects"><h3>Projects</h3></a>
                 <a href="#"><h3>Résumé</h3></a>
             </div>
         </div>
     </header>
 
-    <div class="cover">
+    <div class="cover" id="about">
         <div class="inner-cover">
-            <h1>Barnabé Frimaudeau</h1>
-            <h3>2nd year Computer Science student at Carleton university</h3>
+            <div class="main-image"></div>
+
+            <h1>Hey, I'm <span class="emphasis">Barnabé Frimaudeau</span>. I built this website to show what I've been working on!</h1>
         </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="inner-projects">
-            <h1>Projects</h1>
+            <div class="projects-title">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="single-project">
+                <h2><span class="emphasis">[WIP] Day Trading Sim</span></h2>
+                <p><em>HTML, CSS, JavaScript</em></p>
+                <h3>Project description goes here! I can talk about its purpose, or what I have learned from working on it.</h3>
+            </div>
+            <div class="single-project">
+                <h2><span class="emphasis">[WIP] Chess</span></h2>
+                <p><em>Vite React, HTML, CSS, JavaScript</em></p>
+                <h3>Project description goes here! I can talk about its purpose, or what I have learned from working on it.</h3>
+            </div>
+            <div class="single-project">
+                <h2><span class="emphasis">Web Crawler & Search Engine GUI</span></h2>
+                <p><em>Java, JavaFX</em></p>
+                <h3>Created the GUI for a web crawler application</h3>
+            </div>
         </div>
     </div>
 </body>

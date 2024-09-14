@@ -1,19 +1,25 @@
 :root {
-    --color1: #000000;
-    --color1-header: #0b0c0f99;
-    --color2: #0b0c0f;
+    --color1: #12151d;
+    --color1-header: #12151d99;
+    --color2: #171b24;
     --color3: #272d3d;
     --color4: #dbe4ff;
 }
 
 html {
-    font-family: sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth
 }
 
 body {
     margin: 0;
-    background-color: #000000;
+    background-color: #12151d;
     color: var(--color4);
+}
+
+.emphasis {
+    font-weight: bold;
+    color: #81a7ff;
 }
 
 header {
@@ -48,6 +54,11 @@ header a:hover {
     transition: 0.2s ease;
 }
 
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .inner-header {
     width: 1100px;
     /* background-color: hotpink; */
@@ -64,8 +75,8 @@ header a:hover {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    border-radius: 20px;
-    border: 1px solid #313131;
+    border-radius: 1rem;
+    border: 1px solid #2b3144;
 }
 @media screen and (max-width: 700px) {
     .inner-header {
@@ -78,6 +89,13 @@ header a:hover {
         margin-bottom: 0.3rem;
     }
 }
+
+/* .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+} */
 
 .nav {
     display: flex;
@@ -93,18 +111,37 @@ header a:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+    background: radial-gradient(circle at 20% 30%, #2a384e, transparent 35%), 
+            radial-gradient(circle at 80% 40%, #1d1e4e, transparent 35%),
+            radial-gradient(circle at 60% 80%, #273841, transparent 40%),
+            radial-gradient(circle at 30% 70%, #4f3d75, transparent 30%),
+            radial-gradient(circle at 10% 90%, #233847, transparent 40%),
+            radial-gradient(circle at 70% 20%, #1d213b, transparent 30%),
+            radial-gradient(circle at 40% 50%, #2d3045, transparent 50%);
+    background-blend-mode: multiply;
+    border-bottom: 2px solid #2b3144;
 }
-.cover h3 {
+/* .cover h3 {
     margin-top: 0;
-}
+} */
 
 .inner-cover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1100px;
-    padding-top: 12rem;
-    padding-bottom: 10rem;
+    width: 800px;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+}
+
+.main-image {
+    background-color: white;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 100%;
+    border: 0.5rem solid #2b3144;
+    background-image: url(./images/jarjar.jpg);
+    background-size: cover
 }
 
 .projects {
@@ -121,7 +158,30 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1100px;
-    padding-top: 1rem;
-    padding-bottom: 100rem;
+    width: 800px;
+    padding-top: 6rem;
+    padding-bottom: 800rem;
+    text-align: left;
+    gap: 2rem;
+}
+
+.projects-title {
+    width: 100%;
+}
+
+.single-project {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    border: 1px solid #2b3144;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.single-project h3 {
+    margin-top: 0;
+}
+.single-project h2 {
+    margin-bottom: 0;
 }
