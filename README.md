@@ -1,5 +1,5 @@
 # portfolio-website
 
-This is my own portfolio website, where I can showcase my projects!
+This is my portfolio!
 
 Live demo: https://bfrim.github.io/portfolio-website/
