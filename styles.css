@@ -146,7 +146,8 @@ header h1{
     padding-right: 2rem;
     text-align: center;
     border-bottom: 2px solid #2b3144;
-    background: radial-gradient(circle at 50% 100%, #192726, transparent 70%)
+    background: radial-gradient(circle at 50% 100%, #192726, transparent 70%);
+    min-height: 100vh;
 }
 /* .cover h3 {
     margin-top: 0;
@@ -180,17 +181,19 @@ header h1{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
-    background: radial-gradient(circle at 10% 30%, #221508, transparent 70%), 
-                radial-gradient(circle at 90% 70%, #1a0715, transparent 70%);
+    background: radial-gradient(circle at 10% 30%, #36220d, transparent 70%), 
+                radial-gradient(circle at 90% 70%, #310d28, transparent 70%);
 }
 
 .inner-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 800px;
     padding-top: 6rem;
-    padding-bottom: 80rem;
+    padding-bottom: 6rem;
+    min-height: 100vh;
     /* text-align: left; */
     gap: 1.5rem;
 }
@@ -201,13 +204,13 @@ header h1{
 
 .single-project {
     background-color: var(--color3);
-    /* box-shadow: 0px 5px 20px 1px var(--color1); */
+    box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 100%;
-    border: 2px solid #91919150;
-    border-radius: 1rem;
+    border: 1px solid #91919150;
+    border-radius: 0.5rem;
     /* margin-left: 1rem;
     margin-right: 1rem; */
     padding-left: 1rem;
