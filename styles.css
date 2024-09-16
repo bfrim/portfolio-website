@@ -1,6 +1,6 @@
 :root {
     --color1: #12151d;
-    --color1-header: #12151d99;
+    --color1-header: #11111199;
     --color2: #171b24;
     --color3: #00000050;
     --color4: #dbe4ff;
@@ -19,7 +19,7 @@ body {
 
 .emphasis {
     font-weight: bold;
-    color: #81a7ff;
+    color: #6cc4bc;
 }
 
 header {
@@ -35,7 +35,7 @@ header a {
     position: relative;
     transition: 0.2s ease;
 }
-header a::after {
+.nav-button-styling::after {
     content: '';
     position: absolute;
     left: 0;
@@ -46,11 +46,11 @@ header a::after {
     transform-origin: right;
     transition: transform 0.2s ease;
 }
-header a:hover::after {
+.nav-button-styling:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
-header a:hover {
+.nav-button-styling:hover {
     transition: 0.2s ease;
 }
 
@@ -60,7 +60,7 @@ header h1{
 }
 
 .inner-header {
-    width: 1100px;
+    width: 900px;
     /* background-color: hotpink; */
     background-color: var(--color1-header);
     backdrop-filter: blur(1rem);
@@ -70,8 +70,8 @@ header h1{
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -80,27 +80,53 @@ header h1{
 }
 
 
-.nav {
+.nav-1 {
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
+.nav-2 button {
+    background-color: #13201f50;
+    border: 1px solid #6cc4bc;
+    border-radius: 0.7rem;
+    height: 3rem;
+    width: 10rem;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.nav-2 button:hover {
+    background-color: #6cc4bc;
+    color: black;
+    border: 2px solid #00000000;
+}
+.nav-2 h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 600px) {
     .inner-header {
-        flex-direction: column;
+        /* flex-direction: column; */
         /* padding-top: 0.3rem;
         padding-bottom: 0.3rem; */
+        justify-content: center;
+        padding-right: 1.5rem;
     }
     .inner-header h3 {
         /* margin-top: 0.3rem;
         margin-bottom: 0.3rem; */
     }
     .inner-header h1 {
-        display: none;
+        /* display: none; */
     }
     .nav {
         gap: 2rem
+    }
+    .nav-2 button {
+        display: none;
     }
 }
 
@@ -140,7 +166,7 @@ header h1{
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
-    border: 0.3rem solid #ffffff;
+    border: 0.5rem solid #ffffff;
     background-image: url(./images/mug2.jpg);
     background-size: cover;
     background-position: center;
@@ -154,8 +180,8 @@ header h1{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
-    background: radial-gradient(circle at 10% 30%, #08140e, transparent 70%), 
-                radial-gradient(circle at 90% 70%, #0b2525, transparent 70%);
+    background: radial-gradient(circle at 10% 30%, #221508, transparent 70%), 
+                radial-gradient(circle at 90% 70%, #1a0715, transparent 70%);
 }
 
 .inner-projects {
@@ -164,7 +190,7 @@ header h1{
     align-items: center;
     width: 800px;
     padding-top: 6rem;
-    padding-bottom: 8rem;
+    padding-bottom: 80rem;
     /* text-align: left; */
     gap: 1.5rem;
 }
@@ -175,12 +201,12 @@ header h1{
 
 .single-project {
     background-color: var(--color3);
-    box-shadow: 0px 5px 20px 1px var(--color1);
+    /* box-shadow: 0px 5px 20px 1px var(--color1); */
     display: flex;
     flex-direction: column;
     align-items: start;
     width: 100%;
-    border: 1px solid #91919150;
+    border: 2px solid #91919150;
     border-radius: 1rem;
     /* margin-left: 1rem;
     margin-right: 1rem; */
