@@ -236,11 +236,15 @@ header h1{
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: left;
+    transition: 150ms ease-in-out;
 }
 .single-project a {
     color: rgb(149, 234, 255);
 }
 
+.single-project:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+}
 .inner-projects,
 .single-project {
     box-sizing: border-box;
