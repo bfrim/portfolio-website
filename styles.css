@@ -34,9 +34,30 @@ header a {
     text-decoration: none;
     color: var(--color4);
     position: relative;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
 }
-.nav-button-styling::after {
+.nav-button-styling {
+    border: 2px solid white;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--color1-header);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border-radius: 0.25rem;
+}
+
+.nav-button-styling:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    color: black;
+    box-shadow: -0.5rem 0.5rem #6cc4bc;
+}
+
+.nav-button-styling:active {
+    transform: translateY(3px);
+    box-shadow: 0 0 #6cc4bc;
+}
+
+/* .nav-button-styling::after {
     content: '';
     position: absolute;
     left: 0;
@@ -53,9 +74,10 @@ header a {
 }
 .nav-button-styling:hover {
     transition: 0.2s ease;
-}
+} */
 
 header h1{
+    padding: 0.65rem 0 0.65rem 0;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -63,9 +85,9 @@ header h1{
 .inner-header {
     width: 900px;
     /* background-color: hotpink; */
-    background-color: var(--color1-header);
+    /* background-color: var(--color1-header);
     backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,14 +99,14 @@ header h1{
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 1rem;
-    border: 1px solid #2b3144;
+    /* border: 1px solid #2b3144; */
 }
 
 
 .nav-1 {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .nav-2 button {
@@ -188,7 +210,7 @@ header h1{
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
-    outline: 0.5rem solid #00ffdd80;
+    outline: 0.5rem solid #ffffff;
     background-image: url(./images/my_cat.JPG);
     background-size: cover;
     background-position: center;
