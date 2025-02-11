@@ -169,7 +169,7 @@ header h1{
     padding-right: 2rem;
     text-align: center;
     border-bottom: 1px solid #2b3144;
-    background: radial-gradient(circle at 50% 100%, #173331, transparent 70%);
+    background: radial-gradient(circle at 50% 150%, #004d50, transparent 70%);
     min-height: 100vh;
 }
 /* .cover h3 {
@@ -198,8 +198,8 @@ header h1{
     flex-direction: column;
     align-items: center;
     width: 800px;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    /* padding-top: 20vh; */
+    /* padding-bottom: 20vh; */
 }
 .inner-cover h1 {
     margin-top: 4rem;
@@ -224,8 +224,8 @@ header h1{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
-    background: radial-gradient(circle at 10% 30%, #093341, transparent 70%), 
-                radial-gradient(circle at 90% 70%, #0f0936, transparent 70%);
+    background: radial-gradient(circle at 10% 30%, #040708, transparent 70%), 
+                radial-gradient(circle at 90% 70%, #400f57, transparent 70%);
     border-bottom: 1px solid #3b3d1f;
     
 }
@@ -264,7 +264,7 @@ header h1{
     transition: 150ms ease-in-out;
 }
 .single-project a {
-    color: rgb(149, 234, 255);
+    color: #6cc4bc;
 }
 
 .single-project:hover {
@@ -292,8 +292,8 @@ header h1{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: center;
-    background: radial-gradient(circle at 10% 30%, #072e11, transparent 70%), 
-                radial-gradient(circle at 90% 70%, #011402, transparent 70%);
+    background: radial-gradient(circle at 0% 30%, #002008, transparent 70%), 
+                radial-gradient(circle at 90% 100%, #422d00, transparent 70%);
 }
 
 .inner-extras {
