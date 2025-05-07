@@ -19,10 +19,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", highlightNav);
 
-    // navLinks.forEach((link) => {
-    //     link.addEventListener("click", () => {
-    //         navLinks.forEach((link) => link.classList.remove("active"));
-    //         link.classList.add("active");
-    //     });
-    // });
+    const sciFiVideo = document.querySelector('.sci-fi-video');
+    const sciFiCard = sciFiVideo.closest('.image-card');
+
+    sciFiCard.addEventListener('mouseenter', () => {
+        sciFiVideo.play();
+    });
+
+    sciFiCard.addEventListener('mouseleave', () => {
+        sciFiVideo.pause();
+        sciFiVideo.currentTime = 0;
+    });
+
+    let isPlaying = false;
+    sciFiCard.addEventListener('click', (e) => {
+        if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
+            e.preventDefault();
+            if (isPlaying) {
+                sciFiVideo.pause();
+                sciFiVideo.currentTime = 0;
+                isPlaying = false;
+            } else {
+                sciFiVideo.play();
+                isPlaying = true;
+            }
+        }
+    });
 });

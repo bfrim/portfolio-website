@@ -43,13 +43,23 @@ header a {
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
     border-radius: 0.25rem;
+    
 }
 
-.nav-button-styling:hover {
+/* .nav-button-styling:hover {
     transform: translateY(-3px);
     background-color: white;
     color: black;
     box-shadow: -0.5rem 0.5rem #6cc4bc;
+} */
+
+@media (hover: hover) {
+    .nav-button-styling:hover {
+        transform: translateY(-3px);
+        background-color: white;
+        color: black;
+        box-shadow: -0.5rem 0.5rem #6cc4bc;
+    }
 }
 
 .nav-button-styling:active {
@@ -309,6 +319,14 @@ header h1{
     flex: 1;
 }
 
+.sci-fi-video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.image-card:hover .sci-fi-video {}
+
 .extras {
     background-color: var(--color2);
     display: flex;
@@ -396,3 +414,5 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
